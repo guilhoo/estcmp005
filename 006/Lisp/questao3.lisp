@@ -1,0 +1,6 @@
+(defun intercala (a b)
+    (flet ((nil-pad (list on-list)
+        (append list (make-list (max 0 (- (length on-list) (length list)))))))
+    (loop for x in (nil-pad a b)
+        for y in (nil-pad b a)
+        append (list x y))))
