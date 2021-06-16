@@ -22,7 +22,6 @@
     )
     (setq prev i)
   )
-  ; Acrescentar último item
   (when (equal cont 1)
     (push prev lista)
   )
