@@ -2,4 +2,4 @@
     (let ((i (+ n m)))
     (let ((i (- i 1)))
     (loop for m from m to i
-        do (print m)))))
+        do (format t "~d " m)))))
